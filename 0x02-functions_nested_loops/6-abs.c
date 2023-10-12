@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- *_abs - compute absolute value of an integer
+ * _abs - compute absolute value of an integer
  * @r: take value
+ * Description: the standard library output
+ *
+ * Return: (0)
  */
 
 int _abs(int r)

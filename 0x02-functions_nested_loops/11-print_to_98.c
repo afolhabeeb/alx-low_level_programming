@@ -5,7 +5,7 @@
  * print_to_98 - print all natural numbers to 98
  * @n: extract value
  *
- * Return: always (0)
+ * Return: void
  */
 
 void print_to_98(int n)
@@ -50,6 +50,6 @@ void print_to_98(int n)
 	}
 	else if (n == 98)
 	{
-		printf("%d", n);
+		printf("%d\n", n);
 	}
 }

@@ -4,7 +4,7 @@
  * _strstr - finds the first occurence in a sub-string
  *
  * @haystack: the string to look
- * @nedle: the substring to look out for
+ * @needle: the substring to look out for
  *
  * Return: needle
  */

@@ -25,7 +25,7 @@ int strlen_recur(char *s)
  * Return: biggest or smallest character
  */
 
-int str_compare(char *s, char i, char j)
+int str_compare(char *s, int i, int j)
 {
 	if (*(s + i) == *(s + j))
 	{

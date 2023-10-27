@@ -10,3 +10,7 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int sqrt_i(int n, int i);
 int init_prime(int i, int j);
+int strlen_recur(char *s);
+int str_compare(char *s, char i, char j);
+
+

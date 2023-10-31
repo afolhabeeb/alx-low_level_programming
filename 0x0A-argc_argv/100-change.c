@@ -21,9 +21,9 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	cent = atoi(argv[1]);
-	
+
 	while (cent > 0)
 	{
 		if (cent >= 25)
@@ -39,6 +39,6 @@ int main(int argc, char **argv)
 		coinmin += 1;
 	}
 	printf("%d\n", coinmin);
-	
+
 	return (0);
 }

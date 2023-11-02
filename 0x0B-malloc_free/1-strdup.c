@@ -32,6 +32,6 @@ char *_strdup(char *str)
 	for (j = 0; j <= i; j++)
 	{
 		stralt[j] = str[j];
-		return (stralt);
 	}
+	return (stralt);
 }

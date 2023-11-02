@@ -14,14 +14,17 @@ char *str_concat(char *s1, char *s2)
 	size_t i, j, ln1 = 0, ln2 = 0;
 	char *point, *pont;
 
-	if (s1 == NULL || s2 == NULL)
-		return (" ");
+	if (s1 == NULL)
+		s1 = "";
 
-	while (s1[ln1] != NULL)
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[ln1] != '\0')
 	{
 		ln1++;
 	}
-	while (s2[ln2] != NULL)
+	while (s2[ln2] != '\0')
 	{
 		ln2++;
 	}
@@ -35,13 +38,13 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < ln1; i++)
 	{
-		point[0] = s[i];
+		point[0] = s1[i];
 	}
 
 	for  (j = 0; j <= ln2; j++)
 	{
-		point[i] = s[j];
+		point[i] = s2[j];
 		i++;
 	}
-	return (point)
+	return (point);
 }

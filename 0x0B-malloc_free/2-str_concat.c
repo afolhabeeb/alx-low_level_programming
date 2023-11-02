@@ -19,13 +19,13 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	ln1= 0;
+	ln1 = 0;
 	while (s1[ln1] != '\0')
 	{
 		ln1++;
 	}
 
-	ln2 =0;
+	ln2 = 0;
 	while (s2[ln2] != '\0')
 	{
 		ln2++;

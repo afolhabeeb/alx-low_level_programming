@@ -12,11 +12,10 @@
 char *str_concat(char *s1, char *s2)
 {
 	size_t i, j, ln1 = 0, ln2 = 0;
-	char *point, *pont;
+	char *point;
 
 	if (s1 == NULL)
 		s1 = "";
-
 	if (s2 == NULL)
 		s2 = "";
 
@@ -30,7 +29,6 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	point = malloc(sizeof(char) * (ln1 + ln2 + 1));
-
 	if (point == NULL)
 		free(point);
 		return (NULL);
@@ -40,7 +38,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		point[0] = s1[i];
 	}
-
 	for  (j = 0; j <= ln2; j++)
 	{
 		point[i] = s2[j];

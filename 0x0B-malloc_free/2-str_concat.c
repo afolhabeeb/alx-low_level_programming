@@ -33,9 +33,9 @@ char *str_concat(char *s1, char *s2)
 
 	point = malloc(sizeof(char) * (ln1 + ln2 + 1));
 	if (point == NULL)
-		free(point);
+	{
 		return (NULL);
-
+	}
 
 	for (i = 0; i < ln1; i++)
 	{

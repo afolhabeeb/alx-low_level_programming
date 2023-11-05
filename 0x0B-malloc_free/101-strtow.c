@@ -1,13 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * ch_free_grid - main etry
- *
  * @grid:input
  * @height: input
  */
-
 void ch_free_grid(char **grid, size_t height)
 {
 	if (grid != NULL && height != 0)
@@ -17,16 +14,13 @@ void ch_free_grid(char **grid, size_t height)
 			free(grid[height]);
 		free(grid);
 	}
-
 }
 /**
 * strtow - splits a string in two words
 *
 * @str: string tp be splitted
-*
 * Return: resturn splitted strnig
 */
-
 char **strtow(char *str)
 {
 	char **aout;
@@ -38,14 +32,14 @@ char **strtow(char *str)
 		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 		height++;
 	{
-		aout = malloc((height + 1) * sizeof(char *));
+		aout = malloc(sizeof(char *) * (height + 1));
 	}
 		if (aout == NULL)
 		{
 			free(aout);
 			return (NULL);
 		}
-	for (c = a1 = 0; i < height; i++)
+	for (i = a1 = 0; i < height; i++)
 	{
 		for (c = a1; str[c] != '\0'; c++)
 		{

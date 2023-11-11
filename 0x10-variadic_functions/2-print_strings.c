@@ -20,10 +20,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		wrd = va_arg(str, char*);
+		wrd = va_arg(str, char *);
 
 		if (str == NULL)
+		{
 			printf("(nil)");
+		}
 		else
 		{
 			printf("%s", wrd);
@@ -35,7 +37,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 	va_end(str);
-
-
 }
 

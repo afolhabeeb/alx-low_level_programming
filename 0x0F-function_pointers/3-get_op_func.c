@@ -24,9 +24,13 @@ int (*get_op_func(char *s))(int, int)
 
 	int i;
 
+	/* initialize i */
 	i = 0;
+
+	/* s does not match any of the operands */
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
-	return (ops[i].f);
+
+	return (ops[i].f); /* return operation */
 
 }

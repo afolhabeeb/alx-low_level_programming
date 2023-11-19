@@ -2,7 +2,7 @@
 
 
 /**
- * size_t - print all element of a list list_t
+ * print_list - print all element of a list list_t
  *
  * @h: number of node
  *

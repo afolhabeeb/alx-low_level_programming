@@ -9,11 +9,25 @@
 
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
+	unsigned long int mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	char bin;
+	int i = 0;
+
+
+	for (; mask > 0; mask >>= 1)
 	{
-		_putchar('0');
-		return;
+		if ((n & mask) != 0)
+			i = 1;
+
+		if (i)
+		{
+			if ((n & mask) != 0)
+				bin = '1';
+			else
+				bin = '0';
+			write(1, &bin, 1);
+		}
 	}
-	print_binary(n >> 1);
-	putchar(n & 1 ? '1' : '0');
+	if (!i)
+		write(1, "0", 1);
 }
